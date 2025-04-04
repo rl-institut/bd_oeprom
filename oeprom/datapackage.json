@@ -53,6 +53,11 @@
                         "format": "default"
                     },
                     {
+                        "name": "capacity_cost",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
                         "name": "electric_efficiency",
                         "type": "number",
                         "format": "default"
@@ -91,7 +96,7 @@
                     }
                 ]
             }
-        }, 
+        },
         {
             "path": "data/elements/bus.csv",
             "profile": "tabular-data-resource",
@@ -175,10 +180,10 @@
                             "resource": "bus",
                             "fields": "name"
                         }
-                    }            
+                    }
                 ]
             }
-        },         
+        },
 	{
             "path": "data/elements/conversion_heatpump_boiler.csv",
             "profile": "tabular-data-resource",
@@ -210,6 +215,11 @@
                     },
                     {
                         "name": "capacity",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "capacity_cost",
                         "type": "number",
                         "format": "default"
                     },
@@ -247,7 +257,7 @@
                             "resource": "bus",
                             "fields": "name"
                         }
-                    },              
+                    },
                     {
                         "fields": "efficiency",
                         "reference": {
@@ -256,7 +266,7 @@
                     }
                 ]
             }
-        },              
+        },
         {
             "path": "data/elements/conversion_other.csv",
             "profile": "tabular-data-resource",
@@ -289,6 +299,11 @@
                     {
                         "name": "capacity",
                         "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "capacity_cost",
+                        "type": "number",
                         "format": "default"
                     },
                     {
@@ -325,10 +340,10 @@
                             "resource": "bus",
                             "fields": "name"
                         }
-                    }              
+                    }
                 ]
             }
-        },   
+        },
 	{
             "path": "data/elements/dispatchable.csv",
             "profile": "tabular-data-resource",
@@ -357,7 +372,7 @@
                         "name": "tech",
                         "type": "string",
                         "format": "default"
-                    },                    
+                    },
                     {
                         "name": "capacity",
                         "type": "integer",
@@ -367,7 +382,7 @@
                         "name": "bus",
                         "type": "string",
                         "format": "default"
-                    },                
+                    },
                     {
                         "name": "marginal_cost",
                         "type": "number",
@@ -385,7 +400,7 @@
                             "resource": "bus",
                             "fields": "name"
                         }
-                    }                                            
+                    }
                 ]
             }
         },
@@ -433,7 +448,7 @@
                     }
                 ]
             }
-        },                       
+        },
         {
             "path": "data/elements/load.csv",
             "profile": "tabular-data-resource",
@@ -520,6 +535,11 @@
                         "format": "default"
                     },
                     {
+                        "name": "storage_capacity_cost",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
                         "name": "capacity",
                         "type": "number",
                         "format": "default"
@@ -533,7 +553,7 @@
                         "name": "storage_losses",
                         "type": "number",
                         "format": "default"
-                    },                    
+                    },
                     {
                         "name": "type",
                         "type": "string",
@@ -595,6 +615,11 @@
                         "format": "default"
                     },
                     {
+                        "name": "capacity_cost",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
                         "name": "bus",
                         "type": "string",
                         "format": "default"
@@ -625,7 +650,7 @@
                     }
                 ]
             }
-        },       
+        },
         {
             "path": "data/sequences/profile_efficiency.csv",
             "profile": "tabular-data-resource",
@@ -659,13 +684,13 @@
                         "name": "profile_boiler",
                         "type": "number",
                         "format": "default"
-                    }                                            
+                    }
                 ],
                 "missingValues": [
                     ""
                 ]
             }
-        },  
+        },
         {
             "path": "data/sequences/profile_load.csv",
             "profile": "tabular-data-resource",
