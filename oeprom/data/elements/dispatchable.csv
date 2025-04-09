@@ -1,3 +1,3 @@
 name,type,carrier,tech,capacity,bus,marginal_cost
-dispatchable_grid,dispatchable,electricity,,0,bus_electricity,0.4175
+dispatchable_grid,dispatchable,electricity,,inf,bus_electricity,0.4175
 dispatchable_district_heat,dispatchable,heat,,0,bus_heat,0.175
